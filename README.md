@@ -1,1 +1,1 @@
-# todoapp
+# simple maven app
