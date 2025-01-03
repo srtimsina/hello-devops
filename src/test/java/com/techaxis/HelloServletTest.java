@@ -3,8 +3,8 @@ package com.techaxis;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -18,14 +18,14 @@ public class HelloServletTest {
     private HttpServletResponse response;
     private PrintWriter writer;
 
-    @Before
+    @BeforeEach
     public void setUp() throws IOException {
         servlet = new HelloServlet();
         request = mock(HttpServletRequest.class);
         response = mock(HttpServletResponse.class);
         writer = mock(PrintWriter.class);
 
-        when(response.getWriter()).thenReturn(writer);  // No need for try-catch
+        when(response.getWriter()).thenReturn(writer);
     }
 
     @Test
