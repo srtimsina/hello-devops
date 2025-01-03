@@ -36,6 +36,6 @@ class AnotherPageServletTest {
         verify(mockResponse).setContentType("text/html");
         printWriter.flush();
         String responseContent = stringWriter.toString();
-        assertEquals("<h1>Another Page</h1><p>Welcome to another page!</p>", responseContent);
+        assertEquals("<h1>Hello DevSecOps</h1><p>Welcome to the TechAxis DevSecOps Class!</p>", responseContent);
     }
 }

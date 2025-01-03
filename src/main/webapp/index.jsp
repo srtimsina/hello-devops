@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="text-center">Welcome to TechAxis WebApp</h2>
-        <p class="text-center">Hello, World! Navigate to different pages below:</p>
+        <h2 class="text-center">Welcome to TechAxis</h2>
+        <p class="text-center">Visit our website: <a href="https://techaxis.com.np" target="_blank">techaxis.com.np</a></p>
+
 
         <ul class="list-group">
-            <li class="list-group-item"><a href="${pageContext.request.contextPath}/hello">Go to Hello Servlet</a></li>
-            <li class="list-group-item"><a href="${pageContext.request.contextPath}/anotherPage">Go to Another Page</a></li>
+            <li class="list-group-item"><a href="${pageContext.request.contextPath}/hello">Go to DevOps</a></li>
+            <li class="list-group-item"><a href="${pageContext.request.contextPath}/anotherPage">Go to DevSecOps</a></li>
             <li class="list-group-item"><a href="${pageContext.request.contextPath}/api/data">View JSON API</a></li>
         </ul>
     </div>

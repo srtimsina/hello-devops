@@ -31,6 +31,6 @@ public class HelloServletTest {
     @Test
     public void testDoGet() throws ServletException, IOException {
         servlet.doGet(request, response);
-        verify(writer).write("<h1>Hello DevOps</h1><p>Welcome to techaxis.com</p>");
+        verify(writer).write("<h1>Hello DevOps</h1><p>Welcome to the TechAxis DevOps Class!</p>");
     }
 }
