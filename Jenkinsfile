@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        scannerHome = tool 'sonar6.1'
-    }
     stages {
 
         stage('Build') {
